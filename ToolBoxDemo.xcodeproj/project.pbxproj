@@ -17,6 +17,7 @@
 		4B83ADE827EC6E2D00672549 /* ToolBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADE727EC6E2D00672549 /* ToolBoxDemoTests.m */; };
 		4B83ADF227EC6E2D00672549 /* ToolBoxDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADF127EC6E2D00672549 /* ToolBoxDemoUITests.m */; };
 		4B83ADF427EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */; };
+		4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83AE0127EC6E8100672549 /* NSObject+Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		4B83ADED27EC6E2D00672549 /* ToolBoxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolBoxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B83ADF127EC6E2D00672549 /* ToolBoxDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBoxDemoUITests.m; sourceTree = "<group>"; };
 		4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBoxDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		4B83AE0027EC6E8100672549 /* NSObject+Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Timer.h"; sourceTree = "<group>"; };
+		4B83AE0127EC6E8100672549 /* NSObject+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Timer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		4B83ADBF27EC6E2A00672549 = {
 			isa = PBXGroup;
 			children = (
+				4B83AE0327EC6EAD00672549 /* ToolBox */,
 				4B83ADCA27EC6E2A00672549 /* ToolBoxDemo */,
 				4B83ADE627EC6E2D00672549 /* ToolBoxDemoTests */,
 				4B83ADF027EC6E2D00672549 /* ToolBoxDemoUITests */,
@@ -134,6 +138,15 @@
 				4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */,
 			);
 			path = ToolBoxDemoUITests;
+			sourceTree = "<group>";
+		};
+		4B83AE0327EC6EAD00672549 /* ToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				4B83AE0027EC6E8100672549 /* NSObject+Timer.h */,
+				4B83AE0127EC6E8100672549 /* NSObject+Timer.m */,
+			);
+			path = ToolBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 				4B83ADD327EC6E2A00672549 /* ViewController.m in Sources */,
 				4B83ADCD27EC6E2A00672549 /* AppDelegate.m in Sources */,
 				4B83ADDE27EC6E2D00672549 /* main.m in Sources */,
+				4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */,
 				4B83ADD027EC6E2A00672549 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
