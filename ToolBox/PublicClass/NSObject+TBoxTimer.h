@@ -1,5 +1,5 @@
 //
-//  NSObject+Timer.h
+//  NSObject+TBoxTimer.h
 //  SafeDemo
 //
 //  Created by tianlong on 2022/3/24.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Timer)
+@interface NSObject (TBoxTimer)
 
 - (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
                            callBack:(dispatch_block_t)callBack

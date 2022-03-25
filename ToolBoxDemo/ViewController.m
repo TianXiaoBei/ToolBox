@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+Timer.h"
+#import "NSObject+TBoxTimer.h"
 #import "NSObject+Notification.h"
 #import "OneViewController.h"
 
@@ -27,7 +27,7 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
     
-    //[self addTimer];
+    [self addTimer];
     [self addNotification];
 }
 

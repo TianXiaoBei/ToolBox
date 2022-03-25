@@ -17,7 +17,7 @@
 		4B83ADE827EC6E2D00672549 /* ToolBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADE727EC6E2D00672549 /* ToolBoxDemoTests.m */; };
 		4B83ADF227EC6E2D00672549 /* ToolBoxDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADF127EC6E2D00672549 /* ToolBoxDemoUITests.m */; };
 		4B83ADF427EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */; };
-		4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83AE0127EC6E8100672549 /* NSObject+Timer.m */; };
+		4B83AE0227EC6E8100672549 /* NSObject+TBoxTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83AE0127EC6E8100672549 /* NSObject+TBoxTimer.m */; };
 		4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */; };
 		4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */; };
 		4B86ABB427EDD7ED0030DB3E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB327EDD7ED0030DB3E /* OneViewController.m */; };
@@ -59,8 +59,8 @@
 		4B83ADED27EC6E2D00672549 /* ToolBoxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolBoxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B83ADF127EC6E2D00672549 /* ToolBoxDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBoxDemoUITests.m; sourceTree = "<group>"; };
 		4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBoxDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		4B83AE0027EC6E8100672549 /* NSObject+Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Timer.h"; sourceTree = "<group>"; };
-		4B83AE0127EC6E8100672549 /* NSObject+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Timer.m"; sourceTree = "<group>"; };
+		4B83AE0027EC6E8100672549 /* NSObject+TBoxTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TBoxTimer.h"; sourceTree = "<group>"; };
+		4B83AE0127EC6E8100672549 /* NSObject+TBoxTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TBoxTimer.m"; sourceTree = "<group>"; };
 		4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBWeakProxy.m; sourceTree = "<group>"; };
 		4B86ABAB27EDBED50030DB3E /* TBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBWeakProxy.h; sourceTree = "<group>"; };
 		4B86ABAF27EDC2BC0030DB3E /* TBNotificationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBNotificationTool.h; sourceTree = "<group>"; };
@@ -179,8 +179,8 @@
 		4B86ABAE27EDC1430030DB3E /* PublicClass */ = {
 			isa = PBXGroup;
 			children = (
-				4B83AE0027EC6E8100672549 /* NSObject+Timer.h */,
-				4B83AE0127EC6E8100672549 /* NSObject+Timer.m */,
+				4B83AE0027EC6E8100672549 /* NSObject+TBoxTimer.h */,
+				4B83AE0127EC6E8100672549 /* NSObject+TBoxTimer.m */,
 				4BD172E127ED984F004235CE /* NSObject+Notification.h */,
 				4BD172E227ED984F004235CE /* NSObject+Notification.m */,
 			);
@@ -323,7 +323,7 @@
 				4B86ABB427EDD7ED0030DB3E /* OneViewController.m in Sources */,
 				4B83ADCD27EC6E2A00672549 /* AppDelegate.m in Sources */,
 				4B83ADDE27EC6E2D00672549 /* main.m in Sources */,
-				4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */,
+				4B83AE0227EC6E8100672549 /* NSObject+TBoxTimer.m in Sources */,
 				4BD172E327ED984F004235CE /* NSObject+Notification.m in Sources */,
 				4B83ADD027EC6E2A00672549 /* SceneDelegate.m in Sources */,
 			);

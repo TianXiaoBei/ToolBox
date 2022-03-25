@@ -1,20 +1,20 @@
 //
-//  NSObject+Timer.m
+//  NSObject+TBoxTimer.m
 //  SafeDemo
 //
 //  Created by tianlong on 2022/3/24.
 //
 
-#import "NSObject+Timer.h"
+#import "NSObject+TBoxTimer.h"
 #import <objc/runtime.h>
 
-@interface NSObject (Timer)
+@interface NSObject (TBoxTimer)
 
 @property (nonatomic, strong) NSMutableDictionary *timerDict;
 
 @end
 
-@implementation NSObject (Timer)
+@implementation NSObject (TBoxTimer)
 
 #pragma mark - public function
 
