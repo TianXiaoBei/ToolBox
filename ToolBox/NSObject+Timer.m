@@ -19,17 +19,17 @@
 #pragma mark - public function
 
 - (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
-                        callBack:(dispatch_block_t)callBack
-                           start:(BOOL)start
-                             idf:(NSString *)idf {
+                           callBack:(dispatch_block_t)callBack
+                              start:(BOOL)start
+                                idf:(NSString *)idf {
     [self tb_addTimerWithTimeInterval:interval callBack:callBack start:start idf:idf queue:dispatch_get_main_queue()];
 }
 
 - (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
-                        callBack:(dispatch_block_t)callBack
-                           start:(BOOL)start
-                             idf:(NSString *)idf
-                           queue:(dispatch_queue_t)queue {
+                           callBack:(dispatch_block_t)callBack
+                              start:(BOOL)start
+                                idf:(NSString *)idf
+                              queue:(dispatch_queue_t)queue {
     
     if (idf.length <= 0) {
         NSLog(@"tl -- 定时器的标识不合法,idf===%@",idf);
