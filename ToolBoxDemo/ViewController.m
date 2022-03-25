@@ -26,6 +26,9 @@
     [self addTimerWithTimeInterval:1 callBack:^{
         NSLog(@"------123");
     } start:YES idf:@"123"];
+    [self addTimerWithTimeInterval:1 callBack:^{
+        NSLog(@"------456");
+    } start:YES idf:@"456" queue:dispatch_get_global_queue(0, 0)];
     
     UIButton *btn = [[UIButton alloc] init];
     [btn addTarget:self action:@selector(clickedToDestroyTimer) forControlEvents:UIControlEventTouchUpInside];
@@ -39,8 +42,10 @@
     self.working = !self.working;
     if (self.working) {
         [self stopTimerByIdf:@"123"];
+        [self stopTimerByIdf:@"456"];
     } else {
         [self startTimerByIdf:@"123"];
+        [self startTimerByIdf:@"456"];
     }
 }
 
