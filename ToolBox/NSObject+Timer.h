@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (Timer)
 
 - (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
-                        callBack:(dispatch_block_t)callBack
-                           start:(BOOL)start
-                             idf:(NSString *)idf;
+                           callBack:(dispatch_block_t)callBack
+                              start:(BOOL)start
+                                idf:(NSString *)idf;
 - (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
-                        callBack:(dispatch_block_t)callBack
-                           start:(BOOL)start
-                             idf:(NSString *)idf
-                           queue:(dispatch_queue_t)queue;
+                           callBack:(dispatch_block_t)callBack
+                              start:(BOOL)start
+                                idf:(NSString *)idf
+                              queue:(dispatch_queue_t)queue;
 
 /// 开始计时
 - (void)tb_startTimerByIdf:(NSString *)idf;
