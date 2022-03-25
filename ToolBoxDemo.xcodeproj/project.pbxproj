@@ -60,6 +60,7 @@
 		4B83AE0127EC6E8100672549 /* NSObject+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Timer.m"; sourceTree = "<group>"; };
 		4BD172E127ED984F004235CE /* NSObject+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
 		4BD172E227ED984F004235CE /* NSObject+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
+		4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBoxHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 				4B83AE0127EC6E8100672549 /* NSObject+Timer.m */,
 				4BD172E127ED984F004235CE /* NSObject+Notification.h */,
 				4BD172E227ED984F004235CE /* NSObject+Notification.m */,
+				4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";

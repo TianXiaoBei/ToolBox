@@ -18,14 +18,14 @@
 
 #pragma mark - public function
 
-- (void)addTimerWithTimeInterval:(NSTimeInterval)interval
+- (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
                         callBack:(dispatch_block_t)callBack
                            start:(BOOL)start
                              idf:(NSString *)idf {
-    [self addTimerWithTimeInterval:interval callBack:callBack start:start idf:idf queue:dispatch_get_main_queue()];
+    [self tb_addTimerWithTimeInterval:interval callBack:callBack start:start idf:idf queue:dispatch_get_main_queue()];
 }
 
-- (void)addTimerWithTimeInterval:(NSTimeInterval)interval
+- (void)tb_addTimerWithTimeInterval:(NSTimeInterval)interval
                         callBack:(dispatch_block_t)callBack
                            start:(BOOL)start
                              idf:(NSString *)idf
@@ -67,7 +67,7 @@
     self.timerDict[idf] = timerItem;
 }
 
-- (void)startTimerByIdf:(NSString *)idf {
+- (void)tb_startTimerByIdf:(NSString *)idf {
     NSMutableDictionary *timerItem = self.timerDict[idf];
     if (!timerItem) {
         NSLog(@"tl -- startTimer 该标识没有存储的定时器,idf===%@",idf);
@@ -98,7 +98,7 @@
     }
 }
 
-- (void)stopTimerByIdf:(NSString *)idf {
+- (void)tb_stopTimerByIdf:(NSString *)idf {
     NSMutableDictionary *timerItem = self.timerDict[idf];
     if (!timerItem) {
         NSLog(@"tl -- stopTimer 该标识没有存储的定时器,idf===%@",idf);
@@ -121,7 +121,7 @@
     }
 }
 
-- (void)destroyTimerByIdf:(NSString *)idf {
+- (void)tb_destroyTimerByIdf:(NSString *)idf {
     NSMutableDictionary *timerItem = self.timerDict[idf];
     if (!timerItem) {
         NSLog(@"tl -- destroyTimer 该标识没有定时器,idf===%@",idf);

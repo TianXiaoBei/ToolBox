@@ -23,10 +23,10 @@
 #pragma mark - 添加定时器
 
 - (void)addTimer {
-    [self addTimerWithTimeInterval:1 callBack:^{
+    [self tb_addTimerWithTimeInterval:1 callBack:^{
         NSLog(@"------123");
     } start:YES idf:@"123"];
-    [self addTimerWithTimeInterval:1 callBack:^{
+    [self tb_addTimerWithTimeInterval:1 callBack:^{
         NSLog(@"------456");
     } start:YES idf:@"456" queue:dispatch_get_global_queue(0, 0)];
     
@@ -41,16 +41,16 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.working = !self.working;
     if (self.working) {
-        [self stopTimerByIdf:@"123"];
-        [self stopTimerByIdf:@"456"];
+        [self tb_stopTimerByIdf:@"123"];
+        [self tb_stopTimerByIdf:@"456"];
     } else {
-        [self startTimerByIdf:@"123"];
-        [self startTimerByIdf:@"456"];
+        [self tb_startTimerByIdf:@"123"];
+        [self tb_startTimerByIdf:@"456"];
     }
 }
 
 - (void)clickedToDestroyTimer {
-    [self destroyTimerByIdf:@"123"];
+    [self tb_destroyTimerByIdf:@"123"];
 }
 
 @end

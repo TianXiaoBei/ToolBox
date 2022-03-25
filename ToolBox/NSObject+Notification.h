@@ -9,12 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^NotificationCallback)(NSNotification *note);
+
 @interface NSObject (Notification)
 
 - (void)addObserver:(id)observer
                name:(nullable NSString *)aName
              object:(nullable id)anObject
-           callback:(void(^)(NSNotification *note))callBack;
+           callback:(NotificationCallback)callBack;
 
 @end
 
