@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addTimer];
+//    [self addTimer];
+    [self tb_addObserverWithName:UIApplicationWillEnterForegroundNotification callback:^(NSNotification *note) {
+        NSLog(@"tl -- tb_addObserverWithName,UIApplicationWillEnterForegroundNotification");
+    }];
 }
 
 #pragma mark - 添加定时器

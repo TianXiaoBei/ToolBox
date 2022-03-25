@@ -29,6 +29,7 @@
         self.observerDict = [NSMutableDictionary dictionary];
     }
 
+    NSMutableArray *arrM = self.observerDict[aName];
     NSMutableDictionary *obsModel = [self observerIsExistWithName:aName observer:observer];
     if (obsModel) {
         ///监听者已存在
@@ -42,10 +43,14 @@
         if (callBack) {
             [obsModel setObject:callBack forKey:self.keyCallback];
         }
-        NSMutableArray *arrM = self.observerDict[aName];
+        if (!arrM) {
+            arrM = [NSMutableArray array];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationCallback:) name:aName object:nil];
+        }
         [arrM addObject:obsModel];
         [self.observerDict setObject:arrM forKey:aName];
     }
+    
 }
 
 - (void)private_removeObserver:(id)observer
@@ -77,7 +82,7 @@
 
 #pragma mark - note callback
 
-- (void)TBNotificationCallback:(NSNotification *)note {
+- (void)notificationCallback:(NSNotification *)note {
     NSString *name = note.name;
     NSArray *array = self.observerDict[name];
     for (NSMutableDictionary *dictM in array) {
@@ -118,6 +123,7 @@
 
 - (void)dealloc {
     [self private_removeAllObserver];
+    NSLog(@"tl -- %s",__FUNCTION__);
 }
 
 

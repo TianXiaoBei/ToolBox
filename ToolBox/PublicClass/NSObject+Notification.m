@@ -20,6 +20,9 @@
 
 - (void)tb_addObserverWithName:(nullable NSString *)aName
                       callback:(TBNotificationCallback)callBack {
+    if (!self.noteTool) {
+        self.noteTool = [[TBNotificationTool alloc] init];
+    }
     [self.noteTool private_addObserver:[TBWeakProxy proxyWithTarget:self] name:aName callback:callBack];
 }
 
