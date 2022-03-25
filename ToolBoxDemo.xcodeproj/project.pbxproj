@@ -20,6 +20,7 @@
 		4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83AE0127EC6E8100672549 /* NSObject+Timer.m */; };
 		4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */; };
 		4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */; };
+		4B86ABB427EDD7ED0030DB3E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB327EDD7ED0030DB3E /* OneViewController.m */; };
 		4BD172E327ED984F004235CE /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD172E227ED984F004235CE /* NSObject+Notification.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		4B86ABAB27EDBED50030DB3E /* TBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBWeakProxy.h; sourceTree = "<group>"; };
 		4B86ABAF27EDC2BC0030DB3E /* TBNotificationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBNotificationTool.h; sourceTree = "<group>"; };
 		4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBNotificationTool.m; sourceTree = "<group>"; };
+		4B86ABB227EDD7ED0030DB3E /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		4B86ABB327EDD7ED0030DB3E /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 		4BD172E127ED984F004235CE /* NSObject+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
 		4BD172E227ED984F004235CE /* NSObject+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
 		4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBoxHeader.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				4B83ADD927EC6E2D00672549 /* LaunchScreen.storyboard */,
 				4B83ADDC27EC6E2D00672549 /* Info.plist */,
 				4B83ADDD27EC6E2D00672549 /* main.m */,
+				4B86ABB227EDD7ED0030DB3E /* OneViewController.h */,
+				4B86ABB327EDD7ED0030DB3E /* OneViewController.m */,
 			);
 			path = ToolBoxDemo;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */,
 				4B83ADD327EC6E2A00672549 /* ViewController.m in Sources */,
 				4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */,
+				4B86ABB427EDD7ED0030DB3E /* OneViewController.m in Sources */,
 				4B83ADCD27EC6E2A00672549 /* AppDelegate.m in Sources */,
 				4B83ADDE27EC6E2D00672549 /* main.m in Sources */,
 				4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */,

@@ -6,6 +6,7 @@
 //
 
 #import "TBNotificationTool.h"
+#import "TBWeakProxy.h"
 
 @interface TBNotificationTool ()
 
@@ -62,8 +63,10 @@
     }
     NSMutableArray *temp = [NSMutableArray arrayWithArray:arrM];
     for (NSMutableDictionary *dictM in temp) {
-        id obs = dictM[self.keyObserver];
-        if ([obs isEqual:observer]) {
+        id oldOb = dictM[self.keyObserver];
+        TBWeakProxy *weakOld = (TBWeakProxy *)oldOb;
+        TBWeakProxy *weakNew = (TBWeakProxy *)observer;
+        if ([weakOld.target isEqual:weakNew.target]) {
             [arrM removeObject:dictM];
             break;
         }
@@ -74,11 +77,13 @@
     }
 }
 
-- (void)private_removeAllObserver {
-    [self.observerDict removeAllObjects];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+- (void)private_removeAllObserver:(id)observer {
+    __weak typeof(self)weakSelf = self;
+    NSMutableDictionary *tempDict = [NSMutableDictionary dictionaryWithDictionary:self.observerDict];
+    [tempDict enumerateKeysAndObjectsUsingBlock:^(NSString *aName, NSMutableArray *arrM, BOOL * _Nonnull stop) {
+        [weakSelf private_removeObserver:observer name:aName];
+    }];
 }
-
 
 #pragma mark - note callback
 
@@ -102,8 +107,10 @@
     NSArray *array = self.observerDict[aName];
     NSMutableDictionary *temp = nil;
     for (NSMutableDictionary *dictM in array) {
-        id obs = dictM[self.keyObserver];
-        if ([obs isEqual:observer]) {
+        id oldOb = dictM[self.keyObserver];
+        TBWeakProxy *weakOld = (TBWeakProxy *)oldOb;
+        TBWeakProxy *weakNew = (TBWeakProxy *)observer;
+        if ([weakOld.target isEqual:weakNew.target]) {
             temp = dictM;
             break;
         }
@@ -122,7 +129,7 @@
 }
 
 - (void)dealloc {
-    [self private_removeAllObserver];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"tl -- %s",__FUNCTION__);
 }
 

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
                    callback:(TBNotificationCallback)callBack;
 - (void)private_removeObserver:(id)observer
                           name:(nullable NSString *)aName;
-- (void)private_removeAllObserver;
+- (void)private_removeAllObserver:(id)observer;
 
 @end
 

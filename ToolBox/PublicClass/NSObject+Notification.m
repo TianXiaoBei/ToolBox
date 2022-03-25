@@ -26,13 +26,12 @@
     [self.noteTool private_addObserver:[TBWeakProxy proxyWithTarget:self] name:aName callback:callBack];
 }
 
-- (void)tb_removeObserverWithName:(nullable NSString *)aName
-                           object:(nullable id)anObject {
+- (void)tb_removeObserverWithName:(nullable NSString *)aName {
     [self.noteTool private_removeObserver:[TBWeakProxy proxyWithTarget:self] name:aName];
 }
 
 - (void)tb_removeAllObserver {
-    [self.noteTool private_removeAllObserver];
+    [self.noteTool private_removeAllObserver:[TBWeakProxy proxyWithTarget:self]];
 }
 
 #pragma mark - setter and getter
