@@ -21,7 +21,7 @@
 		4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */; };
 		4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */; };
 		4B86ABB427EDD7ED0030DB3E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB327EDD7ED0030DB3E /* OneViewController.m */; };
-		4BD172E327ED984F004235CE /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD172E227ED984F004235CE /* NSObject+Notification.m */; };
+		4BD172E327ED984F004235CE /* NSObject+TBoxNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD172E227ED984F004235CE /* NSObject+TBoxNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 		4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBNotificationTool.m; sourceTree = "<group>"; };
 		4B86ABB227EDD7ED0030DB3E /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
 		4B86ABB327EDD7ED0030DB3E /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
-		4BD172E127ED984F004235CE /* NSObject+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
-		4BD172E227ED984F004235CE /* NSObject+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
+		4BD172E127ED984F004235CE /* NSObject+TBoxNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TBoxNotification.h"; sourceTree = "<group>"; };
+		4BD172E227ED984F004235CE /* NSObject+TBoxNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TBoxNotification.m"; sourceTree = "<group>"; };
 		4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBoxHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,8 +181,8 @@
 			children = (
 				4B83AE0027EC6E8100672549 /* NSObject+TBoxTimer.h */,
 				4B83AE0127EC6E8100672549 /* NSObject+TBoxTimer.m */,
-				4BD172E127ED984F004235CE /* NSObject+Notification.h */,
-				4BD172E227ED984F004235CE /* NSObject+Notification.m */,
+				4BD172E127ED984F004235CE /* NSObject+TBoxNotification.h */,
+				4BD172E227ED984F004235CE /* NSObject+TBoxNotification.m */,
 			);
 			path = PublicClass;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				4B83ADCD27EC6E2A00672549 /* AppDelegate.m in Sources */,
 				4B83ADDE27EC6E2D00672549 /* main.m in Sources */,
 				4B83AE0227EC6E8100672549 /* NSObject+TBoxTimer.m in Sources */,
-				4BD172E327ED984F004235CE /* NSObject+Notification.m in Sources */,
+				4BD172E327ED984F004235CE /* NSObject+TBoxNotification.m in Sources */,
 				4B83ADD027EC6E2A00672549 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  NSObject+Notification.h
+//  NSObject+TBoxNotification.h
 //  ToolBoxDemo
 //
 //  Created by tianlong on 2022/3/25.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Notification)
+@interface NSObject (TBoxNotification)
 
 /// 添加通知监听：同一个监听者监听同一个key，新的覆盖老的
 /// @param aName 通知名称

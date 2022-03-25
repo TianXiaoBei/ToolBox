@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 #import "NSObject+TBoxTimer.h"
-#import "NSObject+Notification.h"
+#import "NSObject+TBoxNotification.h"
 #import "OneViewController.h"
 
 @interface ViewController ()

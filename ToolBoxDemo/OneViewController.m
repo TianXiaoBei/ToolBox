@@ -6,7 +6,7 @@
 //
 
 #import "OneViewController.h"
-#import "NSObject+Notification.h"
+#import "NSObject+TBoxNotification.h"
 
 @interface OneViewController ()
 

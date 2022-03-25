@@ -1,22 +1,22 @@
 //
-//  NSObject+Notification.m
+//  NSObject+TBoxNotification.m
 //  ToolBoxDemo
 //
 //  Created by tianlong on 2022/3/25.
 //
 
-#import "NSObject+Notification.h"
+#import "NSObject+TBoxNotification.h"
 #import "TBNotificationTool.h"
 #import "TBWeakProxy.h"
 #import <objc/runtime.h>
 
-@interface NSObject (Notification)
+@interface NSObject (TBoxNotification)
 
 @property (nonatomic, strong) TBNotificationTool *noteTool;
 
 @end
 
-@implementation NSObject (Notification)
+@implementation NSObject (TBoxNotification)
 
 - (void)tb_addObserverWithName:(nullable NSString *)aName
                       callback:(TBNotificationCallback)callBack {
