@@ -65,8 +65,8 @@
         [self tb_startTimerByIdf:@"123"];
         [self tb_startTimerByIdf:@"456"];
     }
-    [self tb_removeObserverWithName:UIApplicationWillEnterForegroundNotification];
-    
+//    [self tb_removeObserverWithName:UIApplicationWillEnterForegroundNotification];
+    [self tb_removeAllObserver];
 }
 
 - (void)clickedToDestroyTimer {
