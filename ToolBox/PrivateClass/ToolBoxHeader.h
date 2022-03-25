@@ -9,6 +9,7 @@
 #define ToolBoxHeader_h
 
 
+typedef void(^TBNotificationCallback)(NSNotification *note);
 
 
 #endif /* ToolBoxHeader_h */

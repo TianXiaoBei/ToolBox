@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "NSObject+Timer.h"
+#import "NSObject+Notification.h"
 
 @interface ViewController ()
 @property (nonatomic, assign) BOOL working;
@@ -16,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self addTimer];
 }
 

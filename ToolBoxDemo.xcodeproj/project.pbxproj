@@ -19,6 +19,7 @@
 		4B83ADF427EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83ADF327EC6E2D00672549 /* ToolBoxDemoUITestsLaunchTests.m */; };
 		4B83AE0227EC6E8100672549 /* NSObject+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B83AE0127EC6E8100672549 /* NSObject+Timer.m */; };
 		4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */; };
+		4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */; };
 		4BD172E327ED984F004235CE /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD172E227ED984F004235CE /* NSObject+Notification.m */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +62,11 @@
 		4B83AE0127EC6E8100672549 /* NSObject+Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Timer.m"; sourceTree = "<group>"; };
 		4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBWeakProxy.m; sourceTree = "<group>"; };
 		4B86ABAB27EDBED50030DB3E /* TBWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBWeakProxy.h; sourceTree = "<group>"; };
+		4B86ABAF27EDC2BC0030DB3E /* TBNotificationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBNotificationTool.h; sourceTree = "<group>"; };
+		4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBNotificationTool.m; sourceTree = "<group>"; };
 		4BD172E127ED984F004235CE /* NSObject+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
 		4BD172E227ED984F004235CE /* NSObject+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
 		4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBoxHeader.h; sourceTree = "<group>"; };
-		4BD172EB27EDB964004235CE /* NotificationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTool.h; sourceTree = "<group>"; };
-		4BD172EC27EDB964004235CE /* NotificationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,17 +153,33 @@
 		4B83AE0327EC6EAD00672549 /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				4B86ABAE27EDC1430030DB3E /* PublicClass */,
+				4B86ABAD27EDC12C0030DB3E /* PrivateClass */,
+			);
+			path = ToolBox;
+			sourceTree = "<group>";
+		};
+		4B86ABAD27EDC12C0030DB3E /* PrivateClass */ = {
+			isa = PBXGroup;
+			children = (
+				4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */,
 				4B86ABAB27EDBED50030DB3E /* TBWeakProxy.h */,
 				4B86ABAA27EDBED50030DB3E /* TBWeakProxy.m */,
+				4B86ABAF27EDC2BC0030DB3E /* TBNotificationTool.h */,
+				4B86ABB027EDC2BC0030DB3E /* TBNotificationTool.m */,
+			);
+			path = PrivateClass;
+			sourceTree = "<group>";
+		};
+		4B86ABAE27EDC1430030DB3E /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
 				4B83AE0027EC6E8100672549 /* NSObject+Timer.h */,
 				4B83AE0127EC6E8100672549 /* NSObject+Timer.m */,
 				4BD172E127ED984F004235CE /* NSObject+Notification.h */,
 				4BD172E227ED984F004235CE /* NSObject+Notification.m */,
-				4BD172EA27EDB72F004235CE /* ToolBoxHeader.h */,
-				4BD172EB27EDB964004235CE /* NotificationTool.h */,
-				4BD172EC27EDB964004235CE /* NotificationTool.m */,
 			);
-			path = ToolBox;
+			path = PublicClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B86ABB127EDC2BC0030DB3E /* TBNotificationTool.m in Sources */,
 				4B83ADD327EC6E2A00672549 /* ViewController.m in Sources */,
 				4B86ABAC27EDBED50030DB3E /* TBWeakProxy.m in Sources */,
 				4B83ADCD27EC6E2A00672549 /* AppDelegate.m in Sources */,
