@@ -1,5 +1,5 @@
 //
-//  NSObject+Notification.h
+//  NotificationTool.h
 //  ToolBoxDemo
 //
 //  Created by tianlong on 2022/3/25.
@@ -9,16 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^NotificationCallback)(NSNotification *note);
+@interface NotificationTool : NSObject
 
-@interface NSObject (Notification)
-
-- (void)tb_addObserver:(id)observer
+- (void)tl_addObserver:(id)observer
                   name:(nullable NSString *)aName
                 object:(nullable id)anObject
               callback:(NotificationCallback)callBack;
-- (void)tb_removeObserver:(id)observer name:(nullable NSString *)aName;
-- (void)tb_removeAllObserver;
+- (void)tl_removeObserver:(id)observer name:(nullable NSString *)aName;
+- (void)tl_removeAllObserver;
 
 @end
 

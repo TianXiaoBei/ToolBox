@@ -1,30 +1,19 @@
-//
-//  YYWeakProxy.m
-//  YYKit <https://github.com/ibireme/YYKit>
-//
-//  Created by ibireme on 14/10/18.
-//  Copyright (c) 2015 ibireme.
-//
-//  This source code is licensed under the MIT-style license found in the
-//  LICENSE file in the root directory of this source tree.
-//
 
-#import "YYWeakProxy.h"
+#import "TBWeakProxy.h"
 
 /**
     实现的原理： 使用 NSProxy 持有 NSTimer 的 target
     不再用 NSTimer 直接持有 self，就不会导致 timer 对 self 的循环强引用了
  */
-@implementation YYWeakProxy
+@implementation TBWeakProxy
 
 - (instancetype)initWithTarget:(id)target {
     _target = target;
     return self;
 }
 
-//类方法
 + (instancetype)proxyWithTarget:(id)target {
-    return [[YYWeakProxy alloc] initWithTarget:target];
+    return [[TBWeakProxy alloc] initWithTarget:target];
 }
 
 #pragma mark - private
