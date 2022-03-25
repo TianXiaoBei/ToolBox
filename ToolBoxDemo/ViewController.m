@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self addTimer];
+}
+
+#pragma mark - 添加定时器
+
+- (void)addTimer {
     [self addTimerWithTimeInterval:1 callBack:^{
         NSLog(@"------123");
     } start:YES idf:@"123"];

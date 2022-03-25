@@ -22,14 +22,14 @@
                         callBack:(dispatch_block_t)callBack
                            start:(BOOL)start
                              idf:(NSString *)idf {
-    [self addTimerWithTimeInterval:interval callBack:callBack start:start idf:idf isMainQueue:dispatch_get_main_queue()];
+    [self addTimerWithTimeInterval:interval callBack:callBack start:start idf:idf queue:dispatch_get_main_queue()];
 }
 
 - (void)addTimerWithTimeInterval:(NSTimeInterval)interval
                         callBack:(dispatch_block_t)callBack
                            start:(BOOL)start
                              idf:(NSString *)idf
-                     isMainQueue:(BOOL)isMainQueue {
+                           queue:(dispatch_queue_t)queue {
     
     if (idf.length <= 0) {
         NSLog(@"tl -- 定时器的标识不合法,idf===%@",idf);
@@ -47,10 +47,10 @@
         return;
     }
     
-    dispatch_queue_t queue = isMainQueue ? dispatch_get_main_queue() : dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t tiemrQueue = queue ? queue : dispatch_get_main_queue();
     
     timerItem = [NSMutableDictionary dictionary];
-    timerItem[self.keyQueue] = queue;
+    timerItem[self.keyQueue] = tiemrQueue;
     timerItem[self.keyTimeInterval] = @(interval);
     timerItem[self.keyWorking] = @(start ? YES : NO);
     if (callBack) {

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
                         callBack:(dispatch_block_t)callBack
                            start:(BOOL)start
                              idf:(NSString *)idf
-                     isMainQueue:(BOOL)isMainQueue;
+                           queue:(dispatch_queue_t)queue;
 
 /// 开始计时
 - (void)startTimerByIdf:(NSString *)idf;
