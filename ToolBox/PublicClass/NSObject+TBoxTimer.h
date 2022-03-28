@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
                               start:(BOOL)start
                                 idf:(NSString *)idf
                               queue:(dispatch_queue_t)queue;
-
 /// 开始计时
 - (void)tb_startTimerByIdf:(NSString *)idf;
 /// 停止计时
